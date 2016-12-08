@@ -1,0 +1,370 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+nav {
+	position: fixed;
+        z-index: 2;
+}
+nav li {
+	color: #20c4bb;
+	list-style: none;
+	font-family: 'Prata', serif;
+	display: inline-block;
+	margin: 0 5px;
+	padding: 10px;
+	font-size: 25px;
+	/*background-color: 003170;*/
+}
+.WeAre h1 {
+    font-family: 'Prata', serif;
+    color: white;
+    font-size: 7.8em;
+    margin: 51vh auto auto 34vh;
+    text-decoration: underline;
+    display: inline-block;
+}
+.WeAre p {
+	color: #fff;
+	text-align: right;
+	display: inline-block;
+        margin: 2.5vh auto auto 32vh;
+        font-family: 'Inconsolata', monospace;
+	position: relative;
+}
+.design p {
+    color: #16736e;
+    display: inline-block;
+    font-family: "Inconsolata",monospace;
+    margin-left: -1vh;
+    margin-top: 77vh;
+    text-align: right;
+    width: 45vh;
+    z-index: 2;
+}
+.projects p {
+    color: #be4249;
+    display: inline-block;
+    font-family: "Inconsolata",monospace;
+    margin-left: 4vh;
+    margin-top: 77.5vh;
+    text-align: right;
+    width: 42vh;
+    z-index: 2;
+}
+.WeAre {
+    background-color: #003170;
+    background-image: url(../images/assets/h.svg);
+    background-position: 14% 90%;
+    background-repeat: no-repeat;
+    background-size: 334px auto;
+    width: 50%;
+}
+.design {
+    background-color: #71e2dc;
+    background-image: url(../images/assets/d.svg);
+    background-position: 29% 94%;
+    background-repeat: no-repeat;
+    background-size: 63% auto;
+}
+.projects {
+    background-color: #f7989c;
+    background-image: url("../images/assets/p.svg");
+    background-position: 27% 94%;
+    background-repeat: no-repeat;
+    background-size: 50%;
+}
+.design, .projects {
+    width: 25%;
+}
+.WeAre, .design, .projects {
+    height: 90vh;
+    float: left;
+    padding: 22px;
+}
+/*section 2*/
+header span {
+    color: #2864b1;
+    display: inline-block;
+    font-family: "Inconsolata",monospace;
+    font-size: 21px;
+    margin: 0 0 -1px 30%;
+    padding-top: 5vh;
+}
+#works {
+    color: #20c4bb;
+    font-family: "Prata",serif;
+    font-size: 4.5em;
+    letter-spacing: 0.2em;
+    margin-bottom: 3vh;
+    margin-left: 25%;
+    margin-top: 6vh;
+    width: 35vh;
+}
+#branding_left {
+    background-color: #75e3dd;
+    display: inline-block;
+    height: 5vh;
+    margin: 28vh -1vh 0vh 23vh;
+    position: absolute;
+    transform: rotate(-90deg);
+    width: 35vh;
+    z-index: 1;
+}
+#branding_left p {
+    font-family: 'Prata', serif;
+    font-size: 1.7em;
+    text-align: center;
+    z-index: 2;
+    margin-top: 2vh;
+    color: #16736e;
+}
+#branding_rights p {
+    color: #16736e;
+    font-family: 'Prata', serif;
+    font-size: 1.7em;
+    text-align: center;
+    z-index: 2;
+    margin-top: 0.8vh;
+}
+.photo_pineapp {
+    width: 100%;
+    margin-bottom: -52px;
+    margin-left: 3px;
+    width: 100%;
+}
+#text_pineapp {
+    margin-top: -6vh;
+    padding: 4vh;
+}
+#text_pineapp h3 {
+    color: #16736e;
+    font-family: "Prata", serif;
+    font-size: 41px;
+}
+#period {
+    font-family: 'Inconsolata', monospace;
+    font-size: 15px;
+    color: #16736e;
+    margin-top: -3vh;
+}
+#visit1 {
+    color: #75e3dd;
+    font-family: "Inconsolata700", monospace;
+    font-size: 15px;
+    margin-top: 4vh;
+}
+#branding_rights {
+    background-color: #75e3dd;
+    display: block;
+    height: 4vh;
+    margin-left: 70%;
+    margin-top: 23.5vh;
+    position: absolute;
+    transform: rotate(90deg);
+    width: 40vh;
+    z-index: 1;
+}
+.photo_brocco {
+    width: 100%;
+    margin-bottom: -50px;
+    margin-top: 52px;
+    margin-left: -25px;
+}
+#text_healty {
+    margin-top: 6vh;
+    text-align: right;
+}
+#text_healty h3 {
+    color: #16736e;
+    font-family: 'Prata', serif;
+    font-size: 41px;
+    margin-right:5vh;
+}
+#text_healty p {
+    /*font-family: 'Inconsolata', monospace;
+    font-size: 13px;
+    color: #16736e;
+    margin-top: -1vh;
+    margin-right:5vh;*/
+}
+#visit2 {
+    color: #75e3dd;
+    font-family: "Inconsolata700",monospace;
+    font-size: 15px;
+    margin-top: -5vh;
+    opacity: 1;
+    padding: 6vh;
+}
+#branding_left2 {
+    background-color: #75e3dd;
+    display: inline-block;
+    height: 34vh;
+    margin: 4.9vh 0 0 37.5vh;
+    position: absolute;
+    width: 6vh;
+    z-index: 1;
+   /* background-color: #75e3dd;
+    display: inline-block;
+    height: 57px;
+    margin: 7.8vh 0 0 31vh;
+    position: absolute;
+  /*  transform: rotate(-90deg);*/
+  /*  z-index: 1;*/
+}
+#branding_left2 p {
+    color: #16736e;
+    display: inline-block;
+    font-family: "Prata",serif;
+    font-size: 26px;
+    margin: 14.5vh auto auto -12vh;
+    text-align: center;
+    transform: rotate(-90deg);
+    width: 35vh;
+    z-index: 2;
+   /* background-color: #75e3dd;
+    color: #16736e;
+    display: inline-block;
+    font-family: "Prata",serif;
+    font-size: 27px;
+    height: 44px;
+    margin: 4.8vh 0 0 1vh;
+    position: absolute;
+    text-align: center;
+    transform: rotate(-90deg);
+    width: 25vh;
+    z-index: 2;*/
+}
+
+.team h2 {
+    color: #003170;
+    font-family: "Prata",serif;
+    font-size: 100px;
+    letter-spacing: 11px;
+    margin-left: 44vh;
+}
+#text_period1 {
+    margin-top: -6vh;
+    padding: 4vh;
+}
+#text_period1 h3 {
+    color: #16736e;
+    font-family: 'Prata', serif;
+    font-size: 41px;
+}
+#period1{
+    color: #16736e;
+    font-family: "Inconsolata",monospace;
+    font-size: 15px;
+    margin-top: -9vh;
+    padding: 6vh;
+}
+.photo_smartcity {
+    width: 100%;
+    margin: 7.9vh 0.9vh 0;
+}
+#text_smartcity {
+    margin-top: 8vh;
+}
+#text_smartcity h3 {
+    color: #16736e;
+    font-family: 'Prata', serif;
+    font-size: 41px;
+    margin-right:5vh;
+}
+#text_smartcity p {
+    font-family: 'Inconsolata', monospace;
+    font-size: 15px;
+    color: #16736e;
+    margin-top: -1vh;
+    margin-right:5vh;
+}
+#visit3 {
+    color: #75e3dd;
+    font-size: 10px;
+    margin-top: 4vh;
+    font-size: 10px;
+    margin-top: 4vh;
+}
+#foto_team {
+    margin-left: -27vh;
+    margin-top: -3vh;
+    width: 160%;
+}
+#howwestarted {
+    color: #306fbf;
+    font-family: "Prata",serif;
+    font-size: 35px;
+    margin-top: -2vh;
+}
+.whatever {
+    font-family: 'Inconsolata', monospace;
+    color: #444355;
+    font-size: 12px;
+}
+.onPhoto {
+    color: white;
+    font-family: "Inconsolata",monospace;
+    font-size: 15px;
+    margin-left: 39vh;
+    margin-top: 5vh;
+    position: absolute;
+    width: 30vh;
+    z-index: 3;
+}
+.socialMedia {
+  background-color: #F3747B;
+}
+.three h2 {
+    color: #F3747B;
+    font-family: "Prata",serif;
+    font-size: 100px;
+    letter-spacing: 11px;
+    margin-left: 44vh;
+    margin-top: 3vh;
+}
+.foto_house2 {
+  width: 100%;
+}
+#form label {
+  color: #F3747B;
+  font-family: "Inconsolata",monospace;
+  border-right: 0px;
+  border-left: 0px;
+  border-top: 0px;
+  border-bottom: #F3747B solid 1px;
+  height: 19px;
+  cursor: hand;
+}
+#name, #emailData, #topic {
+  border: 0px;
+}
+.socialMedia {
+
+    background-image: url(../images/assets/socialmedia.svg);
+    background-position: 14% 90%;
+    background-repeat: no-repeat;
+    background-size: 334px auto;
+    width: 100%;
+}
+
+/*
+ @-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-o-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}*/
