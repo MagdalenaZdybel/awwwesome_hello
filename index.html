@@ -1,110 +1,134 @@
 <!DOCTYPE html>
 <html lang="pl-PL">
 <head>
-<meta http-equiv="content-type" content="text/html; charset=UTF-8">
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="">
-  <title>hello colors</title>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet"> 
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700" rel="stylesheet"> 
-  <link href="https://fonts.googleapis.com/css?family=Prata" rel="stylesheet"> 
- <link rel="stylesheet" href="css/normalize.css">
- <link rel="stylesheet" href="css/bootstrap.css">
- <link rel="stylesheet" href="css/style.css">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--wymuszenie na IE zastosowanie najnowszego silnika renderującego-->
+  <meta name="viewport" content="width=device-width, initial-scale=1"> <!--wypełnienie całej przestrzeni w oknie przeglądarki, initial scale oznacza skalowanie do 100% wielkości przeglądarki-->
+  <link rel="stylesheet" type="text/css" media="screen" href="screen-styles.css">
+  <link rel="stylesheet" media="screen and  (orientation: portrait)"href="portrait-screen.css" />
+  <title>hello colors - The Awwesome</title>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Prata" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <!--<link rel="stylesheet" href="js/bootstrap.min.js">-->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
 </head>
 <body>
-  <header>
-    <nav>
-      <ul>
-        <li>the offert</li>
-        <li>portfolio</li>
-        <li>about us</li>
-        <li>contact</li>
-      </ul>
-    </nav>
-    <div class="WeAre"><!--Pierwszy niebieski prostokąt z H-->
-      <h1>hello!</h1>
-      <p>We are creative agency based in Warsaw, Poland<br> Creating projects for clients all over the world</p>
+  <script src="js/jquery-3.1.1.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+<header>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <nav class="navbar navbar-text navbar-fixed-top" role="nawigation" id="pasek_nawi">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#my_menu"> <!--naleśnikowe menu przy najmniejszych rozdzielczościach-->
+                <span class="sr-only">Nawigacja</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+            <div class="collapse navbar-collapse" id="my_menu">
+              <ul class="nav navbar-nav navbar-left" id="ul_navi">
+                <li class="active"><a href="#">the offert</a></li>
+                <li><a href="#portfolio">portfolio</a></li>
+                <li><a href="#about_us">about us</a></li>
+                <li><a href="#contact">contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
     </div>
-    <div class="design">
-      <p>Good design is our domain<br> We work in multidisciplinary teams.</p>
-    </div>
-    <div class="projects">
-      <p>We always select varied projects,<br> to step out of our comfort zone.</p>
-    </div>
-      <span>scroll down to find our more about our studio</span>
-  </header>
-  <!--- two -->
-<section class="two">
- <div id="branding_left"><p>branding & web</p></div>
+  </div>
+  <div class="WeAre"><!--niebieski prostokąt z H-->
+    <h1>hello!</h1>
+    <p>We are creative agency based in Warsaw, Poland<br> Creating projects for clients all over the world</p>
+  </div>
+  <div class="design">
+    <p>Good design is our domain<br> We work in multidisciplinary teams.</p>
+  </div>
+  <div class="projects">
+    <p>We always select varied projects,<br> to step out of our comfort zone.</p>
+  </div>
+    <span id="scroll">scroll down to find our more about our studio</span>
+</header>
+<section id="portfolio">
   <p id="works">works</p>
-<div class="container"> 
-  <div class="row">
-    <div class="col-md-6"><!--lewa kolumna ze zdjęciem-->      
-    <img class="photo_pineapp" src="images/assets/pineapp.jpg" alt="foto pineapple"> 
+    <div class="container">
+      <div class="row">
+        <div class="col-sx-12 col-sm-6 col-md-6 col-lg-6" id="foto_pineapp"> <!--lewa kolumna ze zdjęciem-->
+          <div id="branding_left_one"><p>branding & web</p></div>
+          <img class="photo_pineapp" src="images/assets/pineapp.jpg" alt="foto pineapple">
+        </div>
+        <div class="col-sx-12 col-sm-6 col-md-6 col-lg-6" id="text_pineapp"><!--prawa kolumna z tekstami-->
+          <h3>pineapp.</h3>
+          <p id="period">Period: March-April 2016 <br>Team: John (UI), Edwin (UX),<br>Jessica (Front-end)</p>
+          <p id="visit1"><a href="#">VISIT THE WEBSITE</a></p>
+        </div>
+      </div>
     </div>
-<div class="col-md-6" id="text_pineapp"><!--prawa kolumna z tekstami-->
-      <h3>pineapp.</h3>
-       <p id="period">Period: March-April 2016 <br>Team: John (UI), Edwin (UX),<br>Jessica (Front-end)</p>
-      <p id="visit1">VISIT THE WEBSITE</p>
+    <div class="container">
+      <div class="row">
+        <div class="col-sx-12 col-sm-6 col-md-6 col-lg-6" id="text_healty"><!--lewa kolumna z tekstami-->
+          <h3>healty dining.</h3>
+          <p id="period1">Period: March-April 2016<br> Team: John (UI), Edwin (UX),<br> Jessica (Front-end)</p>
+          <p id="visit2"><a href="#">VISIT THE WEBSITE</a></p>
+        </div>
+        <div class="col-sx-12 col-sm-6 col-md-6 col-lg-6"><!--prawa kolumna ze zdjęciem-->
+          <div id="branding_rights"><p>branding & mobile</p></div>
+          <img class="photo_brocco" src="images/assets/healthydining.jpg" alt="foto brocco">
+        </div>
+      </div>
     </div>
-  </div>
-</div>
-<!--kolejna część-->
-<div id="branding_rights"><p>branding & mobile</p></div>
-<div class="container"> 
-  <div class="row">
-    <div class="col-md-6" id="text_healty"><!--lewa kolumna z tekstami-->
-      <h3>healty dining.</h3>
-      <p id="period1">Period: March-April 2016<br> Team: John (UI), Edwin (UX),<br> Jessica (Front-end)</p>
-      <p id="visit2">VISIT THE WEBSITE</p>
+    <div class="container">
+      <div class="row">
+        <div class="col-sx-12 col-sm-6 col-md-6 col-lg-6"><!--lewa kolumna ze zdjęciem-->
+          <div id="branding_left_two"><p>branding & web</p></div>
+          <img class="photo_smartcity" src="images/assets/smartcity.jpg" alt="foto_city">
+        </div>
+        <div id="text_smartcity" class="col-sx-12 col-sm-6 col-md-6 col-lg-6"><!--prawa kolumna z tekstami-->
+          <h3>smart city.</h3>
+          <p id="period2"> Period: March-April 2016<br> Team: John (UI), Edwin (UX),<br> Jessica (Front-end)</p>
+          <p id="visit3"><a href="#">VISIT THE WEBSITE</a></p>
+        </div>
+      </div>
     </div>
-    <div class="col-md-6"><!--prawa kolumna ze zdjęciem-->
-      <img class="photo_brocco" src="images/assets/healthydining.jpg" alt="foto brocco">  
-    </div>
-  </div>
-</div>
-<!--kolejna część-->
-<div id="branding_left2"><p>branding & web</p></div>
-<div class="container"> 
-  <div class="row">
-    <div class="col-md-6"><!--lewa kolumna ze zdjęciem-->
-      <img class="photo_smartcity" src="images/assets/smartcity.jpg" alt="foto_city">
-    </div>
-    <div id="text_smartcity" class="col-md-6"><!--prawa kolumna z tekstami-->
-    <h3>smart city.</h3>
-    <p> Period: March-April 2016<br> Team: John (UI), Edwin (UX),<br> Jessica (Front-end)</p>
-    <p id="visit3">VISIT THE WEBSITE</p>
-    </div>
-  </div>
-</div>  
-</section>
-<!--przerwa w bootstrapie-->
-<section class="team">
+  </section>
+
+<section id="about_us">
   <h2>team</h2>
   <p class="onPhoto">Meet our creative team:<br>
     Joanna, Markus, Elisabeth,<br>
     George &; Micheal.</p>
-  <!-- i po przerwie, foto team(lewa) i blok tekstu(prawa)-->
-<div class="container">
-    <div class="row">   
-        <div class="col-md-6">
+  <div class="container">
+    <div class="row">
+      <div class="col-sx-12 col-sm-6 col-md-6 col-lg-6">
         <img id="foto_team" src="images/assets/team.jpg" alt="foto team">
-        </div>
-        <div class="col-md-6">
-            <h3 id="howwestarted">how<br>we started</h3>
-            <div class="whatever">
-            <p class="rOne">Whatever crucifix hexagon listicle keytar, blue bottle fap
+      </div>
+      <div class="col-sx-12 col-sm-6 col-md-6 col-lg-6">
+        <div class="whatever">
+          <h3 id="howwestarted">how<br>we started</h3>
+          <p class="rOne">Whatever crucifix hexagon listicle keytar, blue bottle fap
             <br>beard vinyl wayfarers tattooed. Viral direct trade meditation
             <br>etsy venmo fingerstache. Post-ironic shabby chic try-hard,
             <br>PBR"&"B man braid you probably haven't heard of them pour-over
-            <br>food truck VHS leggings iceland salvia copper mug.</p> <p class="rTwo">Austin pitchfork heirloom quinoa disrupt, twee locavore DIY
+            <br>food truck VHS leggings iceland salvia copper mug.</p>
+            <p class="rTwo">Austin pitchfork heirloom quinoa disrupt, twee locavore DIY
             <br>small batch bicycle rights pop-up gochujang venmo. Deep v
             <br>blue bottle hell of, kale chips man bun pok pok aesthetic
             <br>letterpress stumptown. Helvetica 8-bit live-edge, narwhal
             <br>snackwave meggings hoodie whatever mumblecore seitan next
-            <br>level. Pok pok kale chips freegan pabst cardigan.</p> <p class="rThree">Pabst raw denim ramps, lo-fi hammock keffiyeh vape. VHS
+            <br>level. Pok pok kale chips freegan pabst cardigan.</p>
+            <p class="rThree">Pabst raw denim ramps, lo-fi hammock keffiyeh vape. VHS
             <br>master cleanse franzen slow-carb letterpress literally,
             <br>bushwick fingerstache scenester blue bottle. Aesthetic
             <br>thundercats YOLO, freegan deep v 8-bit scenester affogato.
@@ -114,156 +138,59 @@
             <br>Offal iPhone forage sustainable. Cronut irony chillwave poke
             <br>celiac.</p>
             <h5>Next level iceland blue bottle fingerstache:</h5>
-                <ul>
-                <li> - hella ennui banh mi iPhone kitsch prism VHS marfa fixie</li>
-                <li> - Typewriter direct trade shoreditch,small batch hexagon </li>
-                <li> - Poutine jean shorts kale chips normcore.</li>
-               </ul>
-            </div>
+            <ul id="list">
+              <li> - hella ennui banh mi iPhone kitsch prism VHS marfa fixie</li>
+              <li> - Typewriter direct trade shoreditch,small batch hexagon </li>
+              <li> - Poutine jean shorts kale chips normcore.</li>
+            </ul>
         </div>
-    </div> 
-</div>
-</section>  
-<!--sekcja trzecia-->
-<section class="three">
-  <h2>contact</h2>
-<div class="container">
-  <div class="row">   
-    <div id="form" class="col-md-4">
-      <form name="myBasicForm">
-      <label for="name">name</label>
-      <input id="name" type="text"></br>
-      <label for="emailData">email</label>
-      <input id="emailData" type="email"></br>
-      <label for="topic">topic</label>
-      <input id="topic" type="text">
-      </form>
-   </div>
-<div class="col-md-4">  
- <div class="foto_house2">
-     <img src="images/assets/office.jpg" alt="foto office">
- </div>
-</div>
-<div id="OurOffice" class="col-md-4"> 
-  <p>Our office is located<br>in the heart of Warsaw</p>
-  <p>Feel free to say hello!</p>
-  <p>Warsaw St. 23/21<br>03-323 Warsaw, <br> POLAND</p>
+      </div>
+    </div>
   </div>
- </div>
-</div>
 </section>
-<footer>
-<div class="socialMedia">
 
-</div>
-<div id="logoSM">
-<!--Pinterest-->
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-   viewBox="15vh 15vh" style="enable-background:new 0 0 72 72;" xml:space="preserve">
-<path id="pinterest-circle-icon" class="st0" d="M36,0C16.1,0,0,16.1,0,36c0,19.9,16.1,36,36,36c19.9,0,36-16.1,36-36
-  C72,16.1,55.9,0,36,0z M40.7,47.8c-2.8,0-5.5-1.5-6.4-3.2c0,0-1.5,6-1.8,7.2c-1.1,4.1-4.4,8.2-4.7,8.5c-0.2,0.2-0.6,0.2-0.6-0.1
-  c-0.1-0.5-0.9-5.7,0.1-9.9c0.5-2.1,3.4-14.2,3.4-14.2s-0.8-1.7-0.8-4.1c0-3.9,2.2-6.7,5-6.7c2.4,0,3.5,1.8,3.5,3.9
-  c0,2.4-1.5,5.9-2.3,9.2c-0.7,2.8,1.4,5,4.1,5c4.9,0,8.3-6.3,8.3-13.9c0-5.7-3.8-10-10.8-10c-7.9,0-12.8,5.9-12.8,12.5
-  c0,2.3,0.7,3.9,1.7,5.1c0.5,0.6,0.5,0.8,0.4,1.5c-0.1,0.5-0.4,1.6-0.5,2.1c-0.2,0.7-0.7,0.9-1.3,0.7c-3.6-1.5-5.3-5.5-5.3-10
-  c0-7.4,6.2-16.3,18.6-16.3c9.9,0,16.5,7.2,16.5,14.9C54.8,40.2,49.1,47.8,40.7,47.8z"/>
-</svg>
-<!--Instagram-->
- <?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" class="instagram-circle-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-   viewBox="15vh 15vh" style="enable-background:new 0 0 10 10;" xml:space="preserve">
-<path id="instagram-circle-icon" class="st0" d="M53.1,20.3v4.4c0,0.7-0.6,1.3-1.3,1.3h-4.3c-0.7,0-1.3-0.6-1.3-1.3v-4.4
-  c0-0.7,0.6-1.3,1.3-1.3h4.3C52.5,19,53.1,19.6,53.1,20.3z M36.5,42.1c3.3,0,5.9-2.6,5.9-5.9c0-3.3-2.6-5.9-5.9-5.9
-  c-3.3,0-5.9,2.6-5.9,5.9C30.6,39.4,33.3,42.1,36.5,42.1z M72,36c0,19.9-16.1,36-36,36C16.1,72,0,55.9,0,36C0,16.1,16.1,0,36,0
-  C55.9,0,72,16.1,72,36z M56.8,30.2H44.9c1.2,1.7,1.9,3.8,1.9,6c0,5.7-4.6,10.4-10.4,10.4c-5.7,0-10.4-4.6-10.4-10.4
-  c0-2.2,0.7-4.3,1.9-6H16.3v18.2c0,4.4,3.6,8,8,8h24.5c4.4,0,8-3.6,8-8V30.2z M36.5,44.2c4.4,0,8-3.6,8-8c0-2.4-1.1-4.5-2.7-6
-  c-0.6-0.5-1.2-0.9-2-1.3c-1-0.5-2.1-0.7-3.3-0.7c-1.2,0-2.3,0.3-3.3,0.7c-0.7,0.3-1.4,0.8-2,1.3c-1.7,1.5-2.7,3.6-2.7,6
-  C28.5,40.6,32.1,44.2,36.5,44.2z M56.8,23.7c0-4.4-3.6-8-8-8H26.9v10.1h-1.6V15.7h-0.9c-0.1,0-0.1,0-0.2,0v10.1h-1.6v-9.9
-  c-0.4,0.1-0.8,0.2-1.2,0.4v9.5h-1.6v-8.6c-2,1.5-3.4,3.8-3.4,6.5v5.3h12.8c1.9-1.9,4.5-3.1,7.4-3.1c2.9,0,5.5,1.2,7.4,3.1h12.9
-  L56.8,23.7L56.8,23.7z"/>
-</svg>
-<!--Twitter-->
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="15vh 15vh" style="enable-background:new 0 0 72 72;" xml:space="preserve">
-</style>
-<path id="twitter-4-icon" class="st0" d="M36,0C16.1,0,0,16.1,0,36c0,19.9,16.1,36,36,36c19.9,0,36-16.1,36-36C72,16.1,55.9,0,36,0z
-	 M54.1,29.8c0.5,11.7-8.2,24.8-23.7,24.8c-4.7,0-9.1-1.4-12.8-3.8c4.4,0.5,8.9-0.7,12.4-3.5c-3.7-0.1-6.7-2.5-7.8-5.8
-	c1.3,0.2,2.6,0.2,3.8-0.1c-4-0.8-6.8-4.4-6.7-8.3c1.1,0.6,2.4,1,3.8,1c-3.7-2.5-4.8-7.4-2.6-11.1c4.1,5.1,10.3,8.4,17.2,8.7
-	c-1.2-5.2,2.7-10.3,8.1-10.3c2.4,0,4.6,1,6.1,2.6c1.9-0.4,3.7-1.1,5.3-2c-0.6,2-1.9,3.6-3.7,4.6c1.7-0.2,3.3-0.7,4.8-1.3
-	C57.2,27.1,55.7,28.6,54.1,29.8z"/>
-</svg>
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="15vh 15vh" style="enable-background:new 0 0 72 72;" xml:space="preserve">
-<path id="facebook-circle-icon" class="st0" d="M36,0C16.1,0,0,16.1,0,36c0,19.9,16.1,36,36,36c19.9,0,36-16.1,36-36
-	C72,16.1,55.9,0,36,0z M46.7,21.2c0,0-3.6,0-5,0c-1.8,0-2.1,0.7-2.1,2.6c0,1.5,0,4.4,0,4.4h7.2L46,36h-6.5v23.3h-9.3V36.1h-4.8v-7.9
-	h4.8c0,0,0-1.1,0-6.2c0-5.8,3.1-8.9,10-8.9c1.1,0,6.4,0,6.4,0V21.2L46.7,21.2z"/>
-</svg>
-</div>
-designed with love by The Awwwwesomes
-</footer>
+<section id="contact">
+  <h2>contact</h2>
+    <div class="container">
+      <div class="row">
+        <div id="form" class="col-sx-12 col-sm- 4 col-md-4 col-lg-4">
+          <form name="myBasicForm">
+            <p><label for="name">name</label>
+            <input id="name" type="text"></p>
+            <p><label for="emailData">email</label>
+            <input id="emailData" type="email"></p>
+            <p><label for="topic">topic</label>
+            <input id="topic" type="text"></p>
+          </form>
+        </div>
+        <div class="col-sx-12 col-sm-4 col-md-4 col-lg-4" id="foto_house2">
+          <img src="images/assets/office.jpg" alt="foto office">
+        </div>
+        <div class="col-sx-12 col-sm- 4 col-md-4 col-lg-4 contact">
+          <p>Our office is located<br>in the heart of Warsaw</p>
+          <p>Feel free to say hello!</p>
+          <p>Warsaw St. 23/21<br>03-323 Warsaw, <br> POLAND</p>
+        </div>
+      </div>
+    </div>
+</section>
+<section id="stopka">
+  <div class="container">
+    <footer class="row">
+    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 all_logs">
+      <a href="#"><img class="logos" src="images/assets/pinterest.svg" alt="logo pinterest" class="img-responsive"></a>
+      <a href="#"><img class="logos" src="images/assets/twitter.svg" alt="logo twitter" class="img-responsive"</a>
+      <a href="#"><img class="logos" src="images/assets/instagram.svg" alt="logo instagram" class="img-responsive"></a>
+      <a href="#"><img class="logos" src="images/assets/facebook.svg" alt="logo facebook" class="img-responsive"></a>
+    </div>
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="social_med">
+      <div class="design_footer"><span>designed with love by The Awwwwesomes</br>
+        Warsaw, 2016</span>
+      </div>
+        <img id="social" src="images/assets/socialmedia.svg">
+    </div>
+    </footer>
+  </div>
+</section>
 </body>
 </html>
-
-<!--  <?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  --><!--
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 166 35" style="enable-background:new 0 0 166 60;" xml:space="preserve">
-<g id="XMLID_3_">
-	<path id="XMLID_55_" class="st0" d="M5.7,22.7c-3.8,0-5.7-1-5.7-3.1c0-0.5,0.2-1,0.5-1.4c0.3-0.4,0.7-0.6,1.2-0.6
-		c0.9,0,1.4,0.4,1.7,1.2c-0.3,0.4-0.5,0.7-0.5,1.2c0,0.7,0.2,1.3,0.7,1.7c0.5,0.4,1.2,0.6,2.3,0.6c1,0,1.9-0.3,2.7-0.8
-		c0.8-0.5,1.1-1.2,1.1-1.9s-0.3-1.3-0.8-1.6c-0.5-0.4-1.4-0.7-2.5-1.1l-3.6-1.1c-1.7-0.5-2.5-1.7-2.5-3.7c0-1.2,0.5-2.3,1.4-3.1
-		s2.2-1.2,3.8-1.2c1.5,0,2.8,0.3,3.6,0.8c0.9,0.5,1.3,1.2,1.3,2.1c0,0.5-0.1,0.9-0.4,1.2c-0.3,0.3-0.7,0.5-1.1,0.5
-		c-0.4,0-0.8-0.1-1-0.3c-0.3-0.2-0.4-0.5-0.4-0.9C7.8,10.8,8,10.4,8,9.9c0-1.2-0.8-1.8-2.5-1.8c-1.2,0-2.2,0.2-2.9,0.7
-		c-0.7,0.5-1.1,1-1.1,1.7c0,0.6,0.1,1.1,0.4,1.4c0.3,0.3,0.7,0.5,1.5,0.8l4.5,1.4c1.1,0.3,1.8,0.8,2.3,1.5s0.7,1.6,0.7,2.7
-		c0,1.1-0.4,2.2-1.3,3.1S7.4,22.7,5.7,22.7z"/>
-	<path id="XMLID_57_" class="st0" d="M15.3,20.6c-1.4-1.4-2.1-3.2-2.1-5.5c0-2.2,0.7-4,2.1-5.5c1.3-1.4,3.1-2,5.2-2
-		c2.1,0,3.8,0.7,5.2,2.1c1.4,1.4,2.1,3.2,2.1,5.4s-0.7,4-2.1,5.4c-1.4,1.4-3.1,2.1-5.1,2.1C18.4,22.7,16.7,22,15.3,20.6z M24.6,16.5
-		v-2.8c0-1.7-0.3-3-1-4c-0.7-1-1.7-1.5-3.1-1.5S18,8.8,17.3,9.7c-0.7,1-1,2.3-1,4v2.8c0,1.7,0.4,3,1,4c0.7,1,1.7,1.5,3.1,1.5
-		s2.4-0.5,3.1-1.5C24.3,19.5,24.6,18.2,24.6,16.5z"/>
-	<path id="XMLID_60_" class="st0" d="M39.5,12.1c0.5-0.4,0.8-0.9,0.8-1.5c0-0.7-0.3-1.2-0.8-1.6c-0.6-0.4-1.3-0.7-2.2-0.7
-		c-1.3,0-2.4,0.5-3.1,1.4c-0.7,1-1.1,2.3-1.1,4v2.8c0,1.7,0.4,3,1.1,4c0.7,1,1.7,1.5,3,1.5c1.3,0,2.5-0.4,3.4-1.1
-		c0.9-0.7,1.5-1.7,1.8-2.8H43c-0.3,1.4-0.9,2.5-1.9,3.3c-1,0.8-2.3,1.2-3.8,1.2c-2.1,0-3.8-0.7-5.2-2.1c-1.4-1.4-2.1-3.2-2.1-5.5
-		c0-2.3,0.7-4.1,2.2-5.4c1.4-1.3,3.1-2,5.1-2c1.6,0,3,0.4,4.1,1.2s1.7,1.8,1.7,3.1c0,0.6-0.2,1.1-0.5,1.4c-0.3,0.3-0.7,0.5-1.2,0.5
-		c-0.5,0-0.9-0.2-1.3-0.5C39.7,13,39.5,12.6,39.5,12.1z"/>
-	<path id="XMLID_62_" class="st0" d="M44.8,8.5V7.9h4.8v13.6l2,0.3v0.6h-6.7v-0.6l2-0.3V8.8L44.8,8.5z M45.9,2.8
-		c0-0.5,0.2-1,0.5-1.3s0.8-0.5,1.3-0.5c0.5,0,1,0.2,1.3,0.5s0.5,0.8,0.5,1.3c0,0.5-0.2,1-0.5,1.3c-0.4,0.4-0.8,0.5-1.3,0.5
-		s-1-0.2-1.3-0.5C46.1,3.7,45.9,3.3,45.9,2.8z"/>
-	<path id="XMLID_65_" class="st0" d="M62.4,19.6c-0.5,1-1.2,1.7-2.1,2.2c-0.9,0.5-2,0.8-3.1,0.8s-2.1-0.3-2.9-0.9
-		c-0.7-0.6-1.1-1.5-1.1-2.6c0-1.1,0.2-2,0.7-2.6c0.5-0.6,1.1-1.1,1.8-1.5c1.4-0.7,3.2-1,5.6-1h1v-2.7c0-2.1-1-3.1-2.9-3.1
-		c-0.8,0-1.5,0.2-2.1,0.6c-0.5,0.4-0.8,0.8-0.8,1.4c0,0.5,0.3,0.9,0.8,1c0,0.5-0.2,0.9-0.5,1.2c-0.4,0.4-0.8,0.5-1.3,0.5
-		s-0.9-0.2-1.2-0.5s-0.5-0.8-0.5-1.3c0-0.5,0.2-1,0.5-1.4c0.3-0.4,0.7-0.8,1.2-1.1c1-0.7,2.4-1,3.9-1c3.8,0,5.7,1.4,5.7,4.3v8.6
-		c0,0.8,0.3,1.3,1,1.3s1-0.4,1-1.2h0.6c0,0.7-0.2,1.2-0.6,1.5c-0.4,0.4-1,0.6-1.8,0.6s-1.5-0.3-2.1-0.8
-		C62.7,21.4,62.4,20.7,62.4,19.6z M62.4,17.6v-2.9h-1c-1.5,0-2.7,0.3-3.7,1c-1,0.7-1.5,1.7-1.5,3.2c0,0.7,0.2,1.3,0.6,1.8
-		c0.4,0.4,1,0.6,1.8,0.6c0.8,0,1.6-0.3,2.4-1S62.2,18.8,62.4,17.6z"/>
-	<path id="XMLID_68_" class="st0" d="M68.2,0.6V0h4.9v21.6l2,0.3v0.6h-6.9v-0.6l2.1-0.3V0.8L68.2,0.6z"/>
-	<path id="XMLID_70_" class="st0" d="M92.6,22.4v-0.6l1.7-0.3v-9.9c0-2-0.8-3.1-2.3-3.1c-1.5,0-2.8,0.9-4.2,2.8v10.1l1.7,0.3v0.6
-		h-6.4v-0.6l2-0.3V8.7l-2-0.3V7.9h4.8v2.6c1.4-1.9,3.1-2.8,5-2.8c2.4,0,3.8,1,4.1,3c1.4-2,3.1-3,5.1-3c1.3,0,2.4,0.3,3.1,1
-		c0.7,0.7,1.1,1.7,1.1,3v9.9l2,0.3v0.6h-6.4v-0.6l1.7-0.3v-9.9c0-2-0.8-3.1-2.3-3.1c-1.5,0-2.8,0.9-4.2,2.8v10.1l1.7,0.3v0.6H92.6z"
-		/>
-	<path id="XMLID_72_" class="st0" d="M117.3,22.1c0.7,0,1.3-0.1,1.9-0.3c0.6-0.2,1.1-0.5,1.6-0.8c1-0.7,1.6-1.7,1.8-2.8h0.6
-		c-0.3,1.4-0.9,2.5-2,3.3c-1.1,0.8-2.4,1.2-3.9,1.2c-2.1,0-3.9-0.7-5.3-2.1c-1.4-1.4-2.1-3.2-2.1-5.5c0-2.2,0.7-4,2.1-5.4
-		c1.3-1.4,3.1-2.1,5.1-2.1c1.8,0,3.3,0.6,4.4,1.7c1.1,1.2,1.7,2.7,1.8,4.4H113v2.8c0,1.7,0.4,3,1.1,4
-		C114.9,21.6,115.9,22.1,117.3,22.1z M117.1,8.3c-1.3,0-2.2,0.4-2.9,1.3c-0.7,0.9-1.1,2-1.2,3.5h7.2C120.2,9.9,119.2,8.3,117.1,8.3z
-		"/>
-	<path id="XMLID_75_" class="st0" d="M137,22.4v-2.9c-1,2.1-2.6,3.2-4.7,3.2c-2,0-3.6-0.7-4.8-2.1c-1.2-1.4-1.8-3.2-1.8-5.5
-		s0.6-4.1,1.8-5.5c1.2-1.4,2.9-2,4.9-2s3.6,1.1,4.6,3.2v-10l-2-0.3V0h4.8v21.6l2,0.3v0.6H137z M128.6,13.7v2.8
-		c0,3.6,1.3,5.4,3.9,5.4c1.2,0,2.3-0.5,3.1-1.5s1.3-2.2,1.3-3.7v-3.2c0-1.4-0.5-2.7-1.3-3.7s-1.9-1.5-3.1-1.5
-		C129.9,8.3,128.6,10.1,128.6,13.7z"/>
-	<path id="XMLID_78_" class="st0" d="M143,8.5V7.9h4.8v13.6l2,0.3v0.6H143v-0.6l2-0.3V8.8L143,8.5z M144.1,2.8c0-0.5,0.2-1,0.5-1.3
-		s0.8-0.5,1.3-0.5c0.5,0,1,0.2,1.3,0.5s0.5,0.8,0.5,1.3c0,0.5-0.2,1-0.5,1.3c-0.4,0.4-0.8,0.5-1.3,0.5s-1-0.2-1.3-0.5
-		C144.3,3.7,144.1,3.3,144.1,2.8z"/>
-	<path id="XMLID_81_" class="st0" d="M160.6,19.6c-0.5,1-1.2,1.7-2.1,2.2c-0.9,0.5-2,0.8-3.1,0.8s-2.1-0.3-2.9-0.9
-		c-0.7-0.6-1.1-1.5-1.1-2.6c0-1.1,0.2-2,0.7-2.6c0.5-0.6,1.1-1.1,1.8-1.5c1.4-0.7,3.2-1,5.6-1h1v-2.7c0-2.1-1-3.1-2.9-3.1
-		c-0.8,0-1.5,0.2-2.1,0.6c-0.5,0.4-0.8,0.8-0.8,1.4c0,0.5,0.3,0.9,0.8,1c0,0.5-0.2,0.9-0.5,1.2c-0.4,0.4-0.8,0.5-1.3,0.5
-		s-0.9-0.2-1.2-0.5s-0.5-0.8-0.5-1.3c0-0.5,0.2-1,0.5-1.4c0.3-0.4,0.7-0.8,1.2-1.1c1-0.7,2.4-1,3.9-1c3.8,0,5.7,1.4,5.7,4.3v8.6
-		c0,0.8,0.3,1.3,1,1.3s1-0.4,1-1.2h0.6c0,0.7-0.2,1.2-0.6,1.5c-0.4,0.4-1,0.6-1.8,0.6s-1.5-0.3-2.1-0.8
-		C160.9,21.4,160.6,20.7,160.6,19.6z M160.6,17.6v-2.9h-1c-1.5,0-2.7,0.3-3.7,1c-1,0.7-1.5,1.7-1.5,3.2c0,0.7,0.2,1.3,0.6,1.8
-		c0.4,0.4,1,0.6,1.8,0.6c0.8,0,1.6-0.3,2.4-1S160.5,18.8,160.6,17.6z"/>
-</g>
-</svg>-->
